@@ -1,0 +1,139 @@
+:root {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(0deg,#f37b0b, #d10606, #f37b0b);
+}
+
+h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.container{
+    text-align: left;
+    background-color: rgb(235, 231, 231);
+    padding: 20px;
+    margin: 20px auto;
+    display: block;
+    border: solid 2px  rgb(235, 231, 231);
+    border-radius: 5px;
+    width: 80vw;
+    max-width: 380px;
+}
+
+.date{
+    color: rgba(236, 10, 10, 0.788);
+    text-align: left;
+}
+
+div.add-new-todo {
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[name="new-todo"]{
+    margin-left: 0px;
+    font-style: italic;
+    color: grey;
+    width: 60vw;
+    max-width: 360px;
+    display: block;
+}
+
+input[name="add"]{
+    color: rgb(255,255,255);
+    background-color: rgb(216, 191, 216);
+    font-size: larger;
+    border-radius: 5px;
+    text-align: center;
+    margin: 4px;
+    display: block;
+}
+
+h4{
+    text-align: left;
+}
+
+.todo { 
+    background-color: rgb(193, 194, 241);
+    border-radius: 5px;
+    margin: 10px;
+    height: 3rem;
+    max-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.todo div{
+    display: flex;
+    align-items: center;
+}
+
+div.todo.pending{
+    animation-name: slide-right;
+    animation-duration: 0.5s;
+}
+
+img.trash{
+    width: 4vw;
+    height: auto;
+}
+
+.fade-in{
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+@keyframes slide-right{
+    0% {
+        transform: translate(100vw);
+    }
+    100%{
+        transform:none;
+    }
+}
+
+@keyframes fade-in{
+    0%{
+        transform:rotateX(30deg);
+    }
+    100%{
+        transform:none;
+    }
+}
+
+.completed .description{
+    text-decoration: line-through;
+}
+.chill{
+    text-align: center;
+}
+
+img.chill{
+    width: 10vw;
+    margin-top: 70px;
+}
+
+.footer-buttons{
+    text-align: center;
+    display: block;
+}
+
+input.toggle-completed{
+    border: none;
+font-weight: bold;
+}
+
+.none{
+    display: none;   
+}    
+
+.hidden{
+    visibility: hidden;
+}
